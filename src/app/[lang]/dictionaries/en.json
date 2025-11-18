@@ -1,0 +1,232 @@
+{
+  "products": {
+    "cart": "Add to Cart"
+  },
+  "about_page": {
+    "page_title": "About Us",
+    "introduction": "Introduction to the International Patients Department",
+    "introduction_description_headText": "The International Patients Unit at Shomal Hospital was established to provide healthcare services to international patients and Iranian expatriates according to international standards. With an experienced, multilingual, and professional team, we support you throughout every stage of your treatment, from initial consultation to returning to your home country.\n• Official license from the Ministry of Health\n• National accreditation, grade one\n• Over 12 years of experience\n• Multilingual team (English, Arabic, Turkish)\n• Full accompaniment from arrival to discharge\n• Cost-effective services with high quality\n• Special services including airport transfer, VIP rooms, interpreter and city tours, Caspian Sea beaches, Hyrcanian forests, and mountain resorts with views of Mount Damavand",
+    "introduction_description_subText": "<ul class='introduction_description_subText'><li>Official license from the Ministry of Health</li><li>National first-class accreditation</li><li>Over 12 years of experience</li><li>Multilingual team (English, Arabic, Turkish)</li><li>Comprehensive assistance from admission to discharge</li><li>Affordable pricing with premium healthcare quality</li><li>Exclusive services such as airport transfer, VIP rooms, translation, city tours, Caspian Sea beaches, Hyrcanian forests, and mountain resorts overlooking Mount Damavand</li></ul>",
+    "department_introduction": "International Patients Department Team",
+    "department_introduction_subtitle": "Our goal is to ensure that you feel comfortable, safe, and supported throughout every step of your treatment — from the initial consultation to your return home.",
+    "dr_jafarian": {
+      "name": "Dr. Mohsen Jafarian",
+      "expertise": "Ph.D. in Healthcare Management",
+      "position": "Hospital Director / Head of International Patients Department"
+    },
+    "dr_motamedi": {
+      "name": "Dr. Hassan Motamedi Motlagh",
+      "expertise": "Specialist in Emergency Medicine",
+      "position": "International Patients Physician"
+    },
+    "heidarnejad": {
+      "name": "Roya Heidarnejad",
+      "expertise": "Emergency Medical Technician",
+      "position": "International Patients Coordinator"
+    },
+    "form": {
+      "head_text": "Need Medical Consultation?",
+      "sub_text": "Please send us details about your medical condition. We will contact you as soon as possible.",
+      "fields": {
+        "first_name": "First Name",
+        "last_name": "Last Name",
+        "email": "Email",
+        "sex": "Gender",
+        "country": "Your Country",
+        "services": "Select one of the medical service packages",
+        "phone_number": "Phone Number",
+        "age": "Age",
+        "message": "Describe your condition"
+      },
+      "buttons": {
+        "send_whatsapp": "Send Request via WhatsApp",
+        "send_email": "Send Request via Email"
+      }
+    }
+  },
+  "pricing_page": {
+    "page_title": "Price List",
+    "table": {
+      "head": [
+        {"name": "Package Name"},
+        {"name": "Service Name"},
+        {"name": "Price Range (USD)"}
+      ]
+    }
+  },
+  "accept_request_form": {
+    "head_text": "Initial Patient Admission Form"
+  },
+  "contact_us_page": {
+    "page_title": "Contact Us",
+    "info_box_title": "Get in Touch with Us"
+  },
+  "patient_rights_charter": {
+    "page_title": "Patient Rights Charter",
+    "section_one": {
+      "title": "Receiving Optimal Health Services is a Patient Right",
+      "content": "<ul className='list-disc  marker:text-secondary marker:text-2xl '>\n<li>Provide dignified and respectful services that honor human value and cultural and religious beliefs.</li>\n<li>Offer services based on honesty, fairness, courtesy, and compassion.</li>\n<li>Be free from any discrimination, including ethnic, cultural, religious, disease type, or gender.</li>\n<li>Be evidence-based and prioritize the best interest of the patient.</li>\n<li>Ensure fair allocation of health resources and prioritize patient treatment needs.</li>\n<li>Coordinate all aspects of care, including prevention, diagnosis, treatment, and rehabilitation.</li>\n<li>Provide essential amenities while avoiding unnecessary pain, suffering, or restrictions.</li>\n<li>Pay special attention to the rights of vulnerable groups, including children, pregnant women, elderly, psychiatric patients, prisoners, mentally and physically disabled, and unaccompanied individuals.</li>\n<li>Provide services promptly while respecting patient time and considering factors such as language, age, and gender.</li>\n<li>Provide urgent and emergency care regardless of cost; non-urgent care should follow established regulations.</li>\n<li>If appropriate services cannot be provided in emergencies, arrange transfer to a equipped unit after essential care and explanations.</li>\n<li>In end-of-life stages where the disease is irreversible and death is imminent, provide services to ensure patient comfort.</li>\n</ul>"
+    },
+    "section_two": {
+      "title": "Information Must Be Provided to the Patient Adequately and Appropriately",
+      "content": "<ul className='list-disc marker:text-secondary marker:text-2xl'>\n<li>Patient rights charter provisions at the time of admission.</li>\n<li>Rules and foreseeable costs of the hospital, including medical and non-medical services, insurance regulations, and introduction of support systems at the time of admission.</li>\n<li>Names, responsibilities, and professional rank of medical team members responsible for patient care, including doctors, nurses, and students, and their professional interactions.</li>\n<li>Diagnostic and treatment methods, strengths and weaknesses of each method, potential side effects, disease diagnosis, prognosis, and all information affecting patient decision-making.</li>\n<li>Access to the attending physician and main medical team members during treatment, provision of necessary training for continuity of care, and all actions with research nature.</li>\n<li>Information must be provided timely and appropriately according to patient conditions, including anxiety, pain, individual characteristics such as language, education, and comprehension ability, unless delaying treatment due to this information would harm the patient, or the patient refuses information despite being aware of the right; in which case, the patient’s will should be respected, unless lack of information exposes the patient or others to new risks.</li>\n<li>The patient can access all information recorded in their clinical file, obtain a copy, and request correction of any errors.</li>\n</ul>"
+    },
+    "section_three": {
+      "title": "The Patient's Right to Choose and Make Informed Decisions Must Be Respected",
+      "content": "<ul className='list-disc space-y-2 text-[1.2rem] marker:text-secondary marker:text-2xl text-[#454547]'>\n<li>Choosing the attending physician and the health service center within regulatory framework, as well as consulting a second physician as an advisor.</li>\n<li>Participation or non-participation in any research, ensuring that the decision does not affect continuity or manner of receiving health services.</li>\n<li>Accepting or rejecting proposed treatments after understanding potential risks; except in cases of suicide or when refusal endangers another person.</li>\n<li>Patient's prior statements regarding future treatments, when capable of decision-making, should be recorded and guide medical actions in case of incapacity, following legal provisions.</li>\n<li>Patient's choice and decision-making must be free, informed, and based on sufficient and comprehensive information (as described above).</li>\n<li>After providing information, allow sufficient time for the patient to make informed decisions.</li>\n</ul>"
+    },
+    "section_four": {
+      "title": "Access to an Efficient Complaint Handling System is a Patient Right",
+      "content": "<ul className='list-disc space-y-2 text-[1.2rem] marker:text-secondary marker:text-2xl text-[#454547]'>\n<li>Every patient has the right to file a complaint with the relevant authorities in case of alleged violation of their rights under this charter, without affecting the quality of health services received.</li>\n<li>Patients have the right to be informed about the process and outcome of their complaint.</li>\n<li>Damages arising from errors by health service providers must be compensated promptly after review and verification, according to regulations.</li>\n</ul>"
+    }
+  },
+  "footer": {
+    "under_logo_text": "The International Patients Team at Shomal Hospital consists of professional healthcare specialists, medical interpreters, and medical travel consultants who provide multilingual, 24-hour support to international patients. Our mission is to ensure that you feel comfortable, safe, and supported throughout every stage of your treatment — from the initial consultation to your safe return home.",
+    "our_address": "Our Address",
+    "ipd_technician_number": "IPD Technician Contact",
+    "hospital_number": "Hospital Contact Number",
+    "contact_us_text": "Contact Us",
+    "contact_us": {
+      "address": "Iran, Mazandaran, Amol, Modarres Blvd, Aftab 47, Shomal Hospital",
+      "ipd_technician_number": "09385745269",
+      "hospital_number": "011-4492"
+    }
+  },
+  "medical_packages": [
+    {
+      "package_name": "Gastroenterology Package",
+      "services": [
+        {"service_name": "Upper Endoscopy"},
+        {"service_name": "Full Colonoscopy"},
+        {"service_name": "Combined Endoscopy and Colonoscopy"}
+      ]
+    },
+    {
+      "package_name": "Hysterectomy Package",
+      "services": [
+        {"service_name": "Uterine or Cervical Cancer Surgery"},
+        {"service_name": "Ovarian Cancer Surgery"}
+      ]
+    },
+    {
+      "package_name": "Cardiology Package",
+      "services": [
+        {"service_name": "Cardiac Angiography"},
+        {"service_name": "Angioplasty + Stenting"},
+        {"service_name": "Cardiac Electrophysiology Test"},
+        {"service_name": "Cardiac Ablation"},
+        {"service_name": "Cardiac Device Implantation (CRT)"},
+        {"service_name": "Cardiac Device Implantation (ICD)"},
+        {"service_name": "Cardiac Device Implantation (Pacemaker)"},
+        {"service_name": "Coronary Artery Bypass Grafting (CABG)"}
+      ]
+    },
+    {
+      "package_name": "Cosmetic Package",
+      "services": [
+        {"service_name": "Liposuction / Lipomatic (Abdomen, Flanks, Thighs)"},
+        {"service_name": "Abdominoplasty (Tummy Tuck)"},
+        {"service_name": "Blepharoplasty (Upper and Lower Eyelids)"},
+        {"service_name": "Face and Neck Lift"},
+        {"service_name": "Breast Augmentation / Lift (With Implant)"},
+        {"service_name": "Breast Augmentation / Lift (Without Implant)"},
+        {"service_name": "Hair Transplant"},
+        {"service_name": "Sleeve"},
+        {"service_name": "Fat Injection to Face or Body"}
+      ]
+    },
+    {
+      "package_name": "Orthopedic Package",
+      "services": [
+        {"service_name": "Hip Joint Replacement"},
+        {"service_name": "Knee Joint Replacement"}
+      ]
+    },
+    {
+      "package_name": "Neurosurgery Package",
+      "services": [
+        {"service_name": "Spinal Surgery (Fusion)"},
+        {"service_name": "Spinal Surgery (Laminectomy)"},
+        {"service_name": "Spinal Surgery (Discectomy)"},
+        {"service_name": "Craniotomy"},
+        {"service_name": "Skull Base Surgery"},
+        {"service_name": "Brain Tumor Surgery"}
+      ]
+    },
+    {
+      "package_name": "ENT Package",
+      "services": [
+        {"service_name": "Septoplasty (Correct Nasal Septum Deviation)"},
+        {"service_name": "Adenoidectomy and/or Tonsillectomy"},
+        {"service_name": "Nasal or Sinus Polyp (Polypectomy)"},
+        {"service_name": "Rhinoplasty (Nose Surgery)"}
+      ]
+    }
+  ],
+  "our_medical_packages": "<ul><li>💼 Full pre-arrival coordination: Coordination with Shomal Hospital to review medical records, consultation with specialist doctors, and sending a cost estimate</li><li>🛬 Airport reception and welcome: Private transfer from the airport to the hospital or hotel</li><li>🌐 Simultaneous interpreter: Translation services in English, Arabic, Kurdish, Turkish, etc.</li><li>🏨 Hotel and accommodation booking: Cooperation with hotels meeting international standards near the hospital</li><li>🧾 Administrative guidance and support: Issuance of invitation letter for medical visa, guidance on customs and residency</li><li>👨‍⚕️ Fast access to specialist doctors: Fully coordinated with Shomal Hospital; immediate appointments and direct referral to the best doctors in each specialty</li><li>📋 Post-discharge follow-up: Sending medical records, communication with the treating doctor, and answering patient’s follow-up questions</li></ul>",
+  "our_doctors": "Our Doctors",
+  "license_number": "Medical License Number",
+  "search_by_name": "Search by doctor's name",
+  "select_this": "Select ...",
+  "search": "Search",
+
+  "medical_packages_headTitle": "Our Medical Services",
+  "transfer_service_page": {
+    "page_title": "Tourism Services",
+    "introduction": {
+      "title": "Tourism Team Introduction",
+      "head_text": "<p>The medical tourism team of Shomal Hospital, in cooperation with Raz Navaye Aseman Alborz Company, has been established to provide a safe, comfortable, and professional experience for international patients. This team is responsible for presenting the hospital’s capabilities and attracting patients from other countries. They serve as a communication bridge between the hospital and international markets.</p>",
+      "mojgan_yaghoubi": {
+        "fullname": "Mozhgan Yaghoubi",
+        "position": "Team Leader & Accommodation Coordinator",
+        "phone_number": "989353093925",
+        "email": "yaqoubi.mozhgan@gmail.com"
+      },
+      "hassan_mozaffarzadeh": {
+        "fullname": "Hassan Mozaffarzadeh",
+        "position": "Transfer & Tour Guide",
+        "phone_number": "989353093925",
+        "email": ""
+      },
+      "packages_list": "Package List",
+      "our_serives_ipd": "Our Services for International Patients",
+      "packages": [
+        {
+          "name": "Luxury Package",
+          "dsc": "<ul><li>Visa issuance</li><li>Airport and city transfer</li><li>Accompanying translator</li><li>Full-board stay in Oxin Royal Suite (double or twin room)</li><li>One-day excursion to Larijan hot springs or Beliron forest (based on traveler’s choice)</li></ul>",
+          "price": "Estimated price: around 1900 USD"
+        },
+        {
+          "name": "Standard Package",
+          "dsc": "<ul><li>Visa issuance</li><li>Airport and city transfer</li><li>Accompanying translator</li><li>Stay in Oxin Hotel standard rooms (double or twin) with breakfast</li><li>Half-day city tour of Amol</li></ul>",
+          "price": "Estimated price: around 1500 USD"
+        },
+        {
+          "name": "Economy Package",
+          "dsc": "<ul><li>Visa issuance</li><li>Airport and city transfer</li><li>Accompanying translator</li><li>Stay at Olympic Hotel with breakfast</li></ul>",
+          "price": "Estimated price: around 900 USD"
+        }
+      ],
+      "image_headTitle": "Half-day Amol City Tour",
+      "amol_museum": "Amol Museum",
+      "grand_mosque": "Amol Grand Mosque",
+      "fire_temple": "Amol Fire Temple"
+    },
+    "jobs": "<ul><li>Responding to initial inquiries from patients and agents</li><li>Medical visa issuance and travel insurance</li><li>Booking accommodations based on patient budget and preferences (hotel, guesthouse, apartment)</li><li>Airport transfer to hospital or residence</li><li>Planning recreational and cultural tours in Amol and nearby areas (depending on patient health)</li><li>Accompanying tourist interpreter if needed</li><li>Arranging companion accommodation and transportation services</li></ul>",
+    "services": "<ul><li>Full coordination before arrival</li><li>Coordination with Shomal Hospital for medical records review, specialist consultation, and cost estimation</li><li>Airport pick-up and reception</li><li>Private transfer to hospital or hotel</li><li>Accompanying multilingual tour guide and interpreter</li><li>Hotel reservation in partnership with international-standard hotels near the hospital</li><li>Administrative support (medical visa invitation letter, customs and residency assistance)</li><li>Full coordination with Shomal Hospital: immediate appointments and referrals to the best specialists</li><li>Post-discharge follow-up (medical file delivery, communication with physician, and answering patient questions)</li></ul><p><strong>Basic Service Fee:</strong> Includes transfer, guide, shared double room accommodation, visa issuance – 1500 USD</p><p><strong>Optional Tours:</strong> If patient is in good condition – Larijan hot springs full-board stay</p>"
+  },
+  "package_price": "Package Price",
+  "reserve_ipd": "Book an appointment & free consultation with IPD expert and doctor",
+  "phone_number": "Phone Number",
+  "email": "Email",
+  "oxin_hotel_location": "Oxin Hotel Location",
+  "olympic_hotel_location": "Olympic Hotel Location",
+  "upload_documents": {
+    "head_text": "Medical Documents Upload Form",
+    "input_code_placeholder": "Enter the code received from the specialist",
+    "input_files_label": "Upload multiple medical document files",
+    "input_dsc": "If you have any notes about the documents, write them here",
+    "sendbutton": "Send Documents"
+  },
+  "related_links":"Related Links"
+}
