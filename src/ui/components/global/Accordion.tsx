@@ -10,7 +10,7 @@ interface AccordionProps {
   description: string;
   thumbnail: string;
   services: string;
-  notes?: string;
+  notes?: string | undefined;
   price: string;
   defaultOpen?: number;
   index: number;

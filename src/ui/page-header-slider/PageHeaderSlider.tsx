@@ -28,8 +28,7 @@ export default function PageHeaderSlider({
       }}
       navigation={false}
       modules={[Pagination, Navigation, Autoplay]}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
+   
       className="lg:h-[50vh] h-[460px]"
     >
       <div

@@ -23,8 +23,6 @@ export default function InsurancesSlider() {
         centerInsufficientSlides={true}
         spaceBetween={40}
         modules={[Navigation, Autoplay]}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
         className="h-[120px]"
       >
         <SwiperSlide className="h-full !w-[120px] rounded-xl overflow-hidden ">

@@ -46,15 +46,6 @@ export default function DoctorsFilterBox({
   return (
     <>
       <div className="grid grid-cols-12 gap-4 mt-16">
-        <div className="col-span-5">
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            placeholder={dict.search_by_name}
-            className="bg-white py-4 px-6 rounded-2xl border-[1px] border-neutral-200 w-full focus:outline-secondary focus:outline-[1px]"
-          />
-        </div>
         <div className="col-span-4">
           <CustomSelect
             value={expertise} // must be string
@@ -65,6 +56,16 @@ export default function DoctorsFilterBox({
             placeholder={dict.select_this}
           />
         </div>
+        <div className="col-span-5">
+          {/* <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder={dict.search_by_name}
+            className="bg-white py-4 px-6 rounded-2xl border-[1px] border-neutral-200 w-full focus:outline-secondary focus:outline-[1px]"
+          /> */}
+        </div>
+        
         <div className="col-span-3">
           <button
             type="button"

@@ -18,8 +18,7 @@ export default function HomeHeaderSlider() {
       }}
       navigation={false}
       modules={[Pagination, Navigation, Autoplay]}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
+   
       className="lg:h-[75vh] h-[460px]"
     >
       {/* <div className="container absolute z-10 bottom-0">

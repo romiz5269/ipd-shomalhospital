@@ -11,17 +11,6 @@ export const metadata: Metadata = {
   title: pages_titles.doctors['fa'] + ' | ' +'بیمارستان شمال',
   description: "Shomal Hospital IPD Doctors page",
 };
-async function getDoctorsData() {
-  const res = await fetch(`http://localhost:4000/doctors`, {cache: "no-cache"});
-  if (!res.ok) {
-    return [];
-  }
-
-  const data = await res.json();
-
-  // console.log(data)
-  return data;
-}
 
 export default async function DoctorsPage({
   params,
@@ -32,11 +21,10 @@ export default async function DoctorsPage({
 }) {
   const {lang} = await params;
   const {name = "", expertise = ""} = await searchParams;
-  const data = await getDoctorsData();
-  const {our_doctors,license_number,search_by_name,search,select_this}=await getDictionary(lang)
-  const filteredData = data.filter((doctor:DoctorDataType) => {
+  const {our_doctors,license_number,search_by_name,search,select_this,doctors}=await getDictionary(lang)
+  const filteredData = doctors.filter((doctor) => {
     const nameMatch = name
-      ? Object.values(doctor.fullname)
+      ? Object.values(doctor.fullname.toString())
           .join(" ")
           .toLowerCase()
           .includes(name.toLowerCase())
@@ -68,7 +56,7 @@ export default async function DoctorsPage({
             dict={{search,search_by_name,select_this}}
           />
           <div className="grid grid-cols-4 gap-10 mt-10 ">
-            {filteredData?.map((doctor: DoctorDataType) => (
+            {filteredData?.map((doctor) => (
               <div
                 key={doctor.id}
                 className="lg:col-span-1 col-span-3 rounded-2xl border-[1px] border-neutral-200 overflow-hidden relative"
@@ -81,12 +69,12 @@ export default async function DoctorsPage({
                     className="object-fill"
                   />
                   <span className="absolute top-2 right-2 p-2 rounded-full text-center text-xs font-semibold bg-blue-primary text-white flex items-center whitespace-nowrap">
-                    {doctor.category.name[lang]}
+                    {doctor.category.name.toString()}
                   </span>
                 </div>
                 <div className=" h-full px-6 py-10 space-y-2 bg-white">
                   <h3 className="lg:text-xl text-lg font-black text-black">
-                    {doctor.fullname[lang]}
+                    {doctor.fullname.toString()}
                   </h3>
 
                   <div>
@@ -97,7 +85,7 @@ export default async function DoctorsPage({
                             key={item.id}
                             className="list-inside list-disc md:text-base text-sm font-medium"
                           >
-                            {item.name[lang]}
+                            {item.name.toString()}
                           </li>
                         ))}
                       </ul>

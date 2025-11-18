@@ -9,25 +9,15 @@ export const metadata: Metadata = {
   title: pages_titles.medical_services['fa'] + ' | ' +'بیمارستان شمال',
   description: "Shomal Hospital IPD medical services page",
 };
-async function getHeadPackages() {
-  const res = await fetch(
-    `http://localhost:4000/medical_packages?is_parent=true`
-  );
-  if (!res.ok) {
-    return [];
-  }
-  const data = await res.json();
-  return data;
-}
+
 
 export default async function MedicalServices({
   params,
 }: {
   params: Promise<{lang: "fa" | "en"}>;
 }) {
-  const packages = await getHeadPackages();
   const {lang} = await params;
-  const {medical_packages_headTitle,our_medical_packages} =await getDictionary(lang)
+  const {medical_packages_headTitle,our_medical_packages,medical_packages_data} =await getDictionary(lang)
 
   return (
     <>
@@ -48,7 +38,7 @@ export default async function MedicalServices({
             <br /> */}
             <div className="introduction_description_subText" dangerouslySetInnerHTML={{__html:our_medical_packages}}/>
             <div className="w-full mt-20 grid grid-cols-12 gap-6">
-              {packages.map((item: packages_types) => {
+              {medical_packages_data.map((item) => {
                 const LazyComponent = lazy(
                   () => import(`@/ui/components/icons/${item.svg}.tsx`)
                 );
@@ -67,7 +57,7 @@ export default async function MedicalServices({
                         </Suspense>
                       </span>
                       <span className="text-xl font-medium mt-4">
-                        {item.title[lang]}
+                        {item.title.toString()}
                       </span>
                     </Link>
                   </div>

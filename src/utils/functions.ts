@@ -14,9 +14,7 @@ export function removeLangFromPathname(
 ) {
   // بررسی می‌کنیم که pathname با /lang شروع می‌شود
   const prefix = `/${lang}`;
-  console.log("prefix : ", prefix);
   if (pathname.startsWith(prefix)) {
-    console.log("yes started");
     return pathname.slice(prefix.length) || "/"; // اگر مسیر خالی شد "/" برگردان
   }
   return pathname; // اگر prefix نبود، مسیر اصلی را برگردان

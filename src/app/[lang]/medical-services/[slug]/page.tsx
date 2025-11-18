@@ -1,20 +1,8 @@
-import { sub_packages_data_type } from "@/types";
 import Accordion from "@/ui/components/global/Accordion";
 import PageHeaderSlider from "@/ui/page-header-slider/PageHeaderSlider";
 import {notFound} from "next/navigation";
 import React from "react";
-
-async function getData(slug: string) {
-  const res = await fetch(
-    `http://localhost:4000/medical_packages?slug=${slug}`
-  );
-  if (!res.ok) {
-    return [];
-  }
-
-  const data = await res.json();
-  return data;
-}
+import {getDictionary} from "../../dictionaries";
 
 export default async function SingleMedicalService({
   params,
@@ -22,9 +10,11 @@ export default async function SingleMedicalService({
   params: Promise<{slug: string; lang: "fa" | "en"}>;
 }) {
   const {slug, lang} = await params;
-  const data = (await getData(slug)) || [];
+  const {medical_packages_data} = await getDictionary(lang);
 
-  if (!data || !data.length) {
+  const data = medical_packages_data.find((p) => p.slug.toString() === slug);
+
+  if (!data) {
     return notFound();
   }
 
@@ -32,26 +22,26 @@ export default async function SingleMedicalService({
     <>
       <PageHeaderSlider
         lang={lang}
-        pageTitle={data[0].title[lang]}
+        pageTitle={data.title.toString()}
         imageSrc="/header-slider-1.webp"
       />
       <section className="mt-16 container">
         <div className="bg-[#F8F9FA] rounded-4xl px-20 py-16">
           <h3 className="text-[3em] font-black text-blue-primary text-center relative before:absolute before:w-[100px] before:block before:bg-secondary before:-bottom-5 before:h-[2px] before:left-[50%] before:translate-x-[-50%] ">
-            انواع خدمات پزشکی {data[0]?.title[lang]}
+            انواع خدمات پزشکی {data?.title.toString()}
           </h3>
           <div className="mt-10 space-y-6">
-            {data[0].sub_packages.map((item:sub_packages_data_type, index: number) =>
-              item?.description?.[lang] ? (
+            {data.sub_packages.map((item, index: number) =>
+              item?.description?.toString() ? (
                 <Accordion
                   key={item.id}
-                  title={item.title[lang]}
+                  title={item.title.toString()}
                   index={index}
-                  description={item?.description?.[lang] ?? ""}
-                  services={item?.services?.[lang] ?? ""}
-                  price={item?.price?.[lang] ?? ""}
+                  description={item?.description?.toString() ?? ""}
+                  services={item?.services?.toString() ?? ""}
+                  price={item?.price?.toString() ?? ""}
                   thumbnail={item?.thumbnail ?? ""}
-                  notes={item?.notes?.[lang] ?? ""}
+                  notes={item?.notes?.toString() || ""}
                 />
               ) : (
                 ""

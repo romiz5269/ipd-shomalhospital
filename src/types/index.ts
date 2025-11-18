@@ -11,32 +11,7 @@ export interface packages_types {
   sub_packages: packages_types[];
 }
 export type languages_types = "fa" | "en" | "ar";
-export interface DoctorDataType {
-  id: number;
-  fullname: {
-    fa: string;
-    en: string;
-    ar: string;
-  };
-  image: string;
-  specialties: {
-    id: number;
-    name: {
-      fa: string;
-      en: string;
-      ar: string;
-    };
-  }[];
-  category: {
-    id: number;
-    name: {
-      fa: string;
-      en: string;
-      ar: string;
-    };
-  };
-  doctor_identify_number: number;
-}
+
 export interface contact_us_form_types {
   [a: string]: {
     [b: string]: {
@@ -49,26 +24,14 @@ export interface contact_us_form_types {
 export interface DoctorDataType {
   id: number;
   image: string;
-  fullname: {
-    fa: string;
-    en: string;
-    ar: string;
-  };
+  fullname: string;
   specialties: {
     id: number;
-    name: {
-      fa: string;
-      en: string;
-      ar: string;
-    };
+    name: string;
   }[];
   category: {
     id: number;
-    name: {
-      fa: string;
-      en: string;
-      ar: string;
-    };
+    name: string;
   };
   doctor_identify_number: number;
 }
