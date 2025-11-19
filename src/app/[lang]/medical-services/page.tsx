@@ -27,8 +27,8 @@ export default async function MedicalServices({
         imageSrc="/header-slider-1.webp"
       />
       <section className="mb-24 mt-10 container ">
-        <div className="bg-[#F8F9FA] rounded-4xl px-40 py-16">
-          <h3 className="text-[3em] font-black text-blue-primary text-center relative before:absolute before:w-[100px] before:block before:bg-secondary before:-bottom-5 before:h-[2px] before:left-[50%] before:translate-x-[-50%] ">
+        <div className="bg-[#F8F9FA] rounded-4xl md:px-40 px-4 md:py-16 py-4">
+          <h3 className="md:text-[3em] text-2xl font-black text-blue-primary text-center relative before:absolute before:w-[100px] before:block before:bg-secondary before:-bottom-5 before:h-[2px] before:left-[50%] before:translate-x-[-50%] ">
             {medical_packages_headTitle}
           </h3>
           <div className="mt-16">
@@ -36,14 +36,14 @@ export default async function MedicalServices({
             </p>
             <br />
             <br /> */}
-            <div className="introduction_description_subText" dangerouslySetInnerHTML={{__html:our_medical_packages}}/>
+            <div className="introduction_description_subText " dangerouslySetInnerHTML={{__html:our_medical_packages}}/>
             <div className="w-full mt-20 grid grid-cols-12 gap-6">
               {medical_packages_data.map((item) => {
                 const LazyComponent = lazy(
                   () => import(`@/ui/components/icons/${item.svg}.tsx`)
                 );
                 return (
-                  <div className="col-span-4" key={item.id}>
+                  <div className="md:col-span-4 col-span-12" key={item.id}>
                     <Link
                       href={`/medical-services/${item.slug}`}
                       className="flex flex-col items-center justify-center py-10 w-full h-full  rounded-xl border-[1px] border-neutral-200 bg-white  hover:border-secondary"

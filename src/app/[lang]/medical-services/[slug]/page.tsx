@@ -26,8 +26,8 @@ export default async function SingleMedicalService({
         imageSrc="/header-slider-1.webp"
       />
       <section className="mt-16 container">
-        <div className="bg-[#F8F9FA] rounded-4xl px-20 py-16">
-          <h3 className="text-[3em] font-black text-blue-primary text-center relative before:absolute before:w-[100px] before:block before:bg-secondary before:-bottom-5 before:h-[2px] before:left-[50%] before:translate-x-[-50%] ">
+        <div className="bg-[#F8F9FA] rounded-4xl md:px-20 px-4 md:py-16 py-4">
+          <h3 className="md:text-[3em] text-xl font-black text-blue-primary text-center relative before:absolute before:w-[100px] before:block before:bg-secondary before:-bottom-5 before:h-[2px] before:left-[50%] before:translate-x-[-50%] ">
             انواع خدمات پزشکی {data?.title.toString()}
           </h3>
           <div className="mt-10 space-y-6">

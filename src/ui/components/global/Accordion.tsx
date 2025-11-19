@@ -36,26 +36,26 @@ export default function Accordion({
 
   return (
     <div className="w-full  space-y-4 overflow-hidden">
-      <div key={index} className="p-4 bg-secondary rounded-2xl ">
+      <div key={index} className="md:p-4 py-4 px-1 bg-secondary rounded-2xl ">
         <button
           className="flex w-full items-center justify-between text-right h-full cursor-pointer"
           onClick={() => toggle(index)}
         >
-          <span className="text-lg font-semibold text-white">{title}</span>
+          <span className="md:text-lg text-sm font-semibold text-white">{title}</span>
           <span
             className={` text-white transition-all duration-300  ${
               openIndex === index ? "rotate-90" : "-rotate-90"
             }`}
           >
-            <ChevronLeftSvg size="20" />
+            <ChevronLeftSvg size="16" />
           </span>
         </button>
 
         <div>
           {openIndex === index && (
-            <div className="bg-white p-10 mt-10 space-y-10">
+            <div className="bg-white md:p-10 px-3 py-1 mt-10 space-y-10">
               {thumbnail && (
-                <div className="h-[600px] w-[80%] mx-auto relative border-[1px] border-neutral-200 rounded-2xl overflow-hidden">
+                <div className="md:h-[600px] h-[200px] w-[80%] mx-auto relative border-[1px] border-neutral-200 rounded-2xl overflow-hidden">
                   <Image
                     src={`/packages/${thumbnail}`}
                     fill
@@ -66,7 +66,7 @@ export default function Accordion({
               )}
               {description && (
                 <div
-                  className="overflow-hidden text-gray-600 mt-2 leading-relaxed text-base"
+                  className="overflow-hidden text-gray-600 mt-2 leading-relaxed md:text-base text-sm"
                   dangerouslySetInnerHTML={{__html: description}}
                 />
               )}
@@ -101,11 +101,11 @@ export default function Accordion({
               )}
               <>
                 <h4 className="font-bold text-lg">
-                  رزرو نوبت و مشاوره رايگان با پزشك و كارشناس IPD :
+                  
                 </h4>
                 <div className="overflow-hidden text-gray-600  leading-relaxed text-base ">
                   <div>ایمیل : <a href={`mailto:${default_info.email}`}>{default_info.email}</a></div>
-                  <div>واتساپ : <a href={`https://wa.me/${+default_info.phone_number}`}></a></div>
+                  <div>واتساپ : <a href={`https://wa.me/${+default_info.phone_number}`}>{default_info.phone_number}</a></div>
                 </div>
               </>
             </div>

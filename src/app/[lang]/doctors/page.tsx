@@ -21,7 +21,7 @@ export default async function DoctorsPage({
 }) {
   const {lang} = await params;
   const {name = "", expertise = ""} = await searchParams;
-  const {our_doctors,license_number,search_by_name,search,select_this,doctors}=await getDictionary(lang)
+  const {our_doctors,license_number,search_by_name,search,select_expertise,doctors}=await getDictionary(lang)
   const filteredData = doctors.filter((doctor) => {
     const nameMatch = name
       ? Object.values(doctor.fullname.toString())
@@ -45,7 +45,7 @@ export default async function DoctorsPage({
         imageSrc="/header-slider-1.webp"
       />
       <div className="my-16 container">
-        <div className="bg-[#F8F9FA] rounded-4xl lg:px-20 py-16">
+        <div className="bg-[#F8F9FA] rounded-4xl lg:px-20 md:py-16 py-4">
           <h3 className="lg:text-[3em] text-2xl font-black text-blue-primary text-center relative before:absolute before:w-[100px] before:block before:bg-secondary before:-bottom-5 before:h-[2px] before:left-[50%] before:translate-x-[-50%] ">
             {our_doctors}
           </h3>
@@ -53,13 +53,13 @@ export default async function DoctorsPage({
             lang={lang}
             defaultName={name}
             defaultExpertise={expertise}
-            dict={{search,search_by_name,select_this}}
+            dict={{search,search_by_name,select_this:select_expertise}}
           />
           <div className="grid grid-cols-4 gap-10 mt-10 ">
             {filteredData?.map((doctor) => (
               <div
                 key={doctor.id}
-                className="lg:col-span-1 col-span-3 rounded-2xl border-[1px] border-neutral-200 overflow-hidden relative"
+                className="lg:col-span-1 col-span-4 rounded-2xl border-[1px] border-neutral-200 overflow-hidden relative"
               >
                 <div className="lg:h-[250px] h-[200px] relative before:absolute before:bottom-0 before:bg-gradient-to-t before:from-white before:to-transparent before:z-10 before:w-full before:h-full before:top-0 before:right-0">
                   <Image

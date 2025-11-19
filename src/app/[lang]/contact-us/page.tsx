@@ -27,15 +27,15 @@ export default async function ContactUs({
         imageSrc="/header-slider-1.webp"
       />
       <section className="mt-16 container">
-        <div className="bg-[#F8F9FA] rounded-4xl px-20 py-16">
+        <div className="bg-[#F8F9FA] rounded-4xl md:px-20 px-4 md:py-16 py-4">
           <div className="grid grid-cols-12 items-center">
-            <div className="col-span-8 grid grid-cols-12 gap-x-20">
-              <div className="col-span-3">
-                <div className="relative h-[200px] w-[200px] rounded-xl overflow-hidden">
-                  <Image fill src={"/heidarnejad.jpg"} alt="doctor" />
+            <div className="md:col-span-8 col-span-12 grid grid-cols-12 md:gap-x-20">
+              <div className="md:col-span-3 col-span-12  bg-amber-50">
+                <div className="relative md:h-[200px] h-[250px] md:w-[200px] w-full  rounded-xl overflow-hidden ">
+                  <Image fill src={"/heidarnejad.jpg"} alt="doctor" className="object-fill" />
                 </div>
               </div>
-              <div className="col-span-9 h-full items-center">
+              <div className="md:col-span-9 col-span-12  items-center md:my-0 my-4">
                 <div className="flex flex-col items-start justify-center gap-y-4">
                   <h3 className="text-3xl font-black text-blue-primary">
                     {about_page?.heidarnejad?.name}
@@ -49,17 +49,17 @@ export default async function ContactUs({
                 </div>
               </div>
             </div>
-            <div className="col-span-4 h-full">
+            <div className="md:col-span-4 col-span-12 h-full">
               <div className="bg-secondary p-8 rounded-xl h-full grid grid-cols-2 items-center">
-                <div className="col-span-1 flex flex-col justify-start items-center gap-y-4">
+                <div className="md:col-span-1 col-span-12 flex flex-col justify-start items-center gap-y-4">
                   <span className="text-white">
                     <TelephoneSvg size="60" />
                   </span>
                   <span className="text-lg text-white font-semibold">
-                    {footer?.contact_us?.ipd_technician_number}
+                    <a href={`tel:${footer?.contact_us?.ipd_technician_number}`}>{footer?.contact_us?.ipd_technician_number}</a>
                   </span>
                 </div>
-                <div className="col-span-1 flex flex-col justify-start items-center gap-y-4">
+                <div className="md:col-span-1 col-span-12 flex flex-col justify-start items-center gap-y-4">
                   <span className="text-white">
                     <svg
                       width="60"
@@ -75,7 +75,7 @@ export default async function ContactUs({
                     </svg>
                   </span>
                   <span className="text-lg text-white font-semibold">
-                    {default_info.email}
+                    <a href={`mailto:${default_info.email}`}>{default_info.email}</a>
                   </span>
                 </div>
               </div>
@@ -84,13 +84,13 @@ export default async function ContactUs({
         </div>
       </section>
       <section className="mt-16 container">
-        <div className="bg-[#F8F9FA] rounded-4xl px-20 py-16">
-          <h3 className="text-[3em] font-black text-blue-primary text-center relative before:absolute before:w-[100px] before:block before:bg-secondary before:-bottom-5 before:h-[2px] before:left-[50%] before:translate-x-[-50%] ">
+        <div className="bg-[#F8F9FA] rounded-4xl md:px-20 px-4 md:py-16 py-4">
+          <h3 className="md:text-[3em] text-2xl font-black text-blue-primary text-center relative before:absolute before:w-[100px] before:block before:bg-secondary before:-bottom-5 before:h-[2px] before:left-[50%] before:translate-x-[-50%] ">
             {contact_us_page?.info_box_title}
           </h3>
           <div className="mt-16">
             <div className="grid grid-cols-12 gap-x-4">
-              <div className="col-span-6 space-y-8">
+              <div className="md:col-span-6 col-span-12 space-y-8">
                 <div className="flex items-center gap-x-4">
                   <div className="w-[70px] h-[70px] flex items-center justify-center rounded-2xl bg-secondary">
                     <span>
@@ -190,7 +190,7 @@ export default async function ContactUs({
                   </a>
                 </div>
               </div>
-              <div className="col-span-6">
+              <div className="md:col-span-6 col-span-12 md:mt-0 mt-8">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6419.524849772638!2d52.347594!3d36.439127!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8fbd6849bf386b%3A0x26cbc9441b00f373!2sShomal%20Hospital!5e0!3m2!1sen!2sus!4v1762836982418!5m2!1sen!2sus"
                   width="100%"
@@ -211,10 +211,10 @@ export default async function ContactUs({
         className="lg:mb-24 mb-10 lg:mt-10 mt-4 container "
       >
         <div className="bg-[#F8F9FA] rounded-4xl lg:px-40 lg:py-16 p-2">
-          <h3 className="lg:text-[3em] text-3xl font-black text-blue-primary text-center relative before:absolute before:w-[100px] before:block before:bg-secondary before:-bottom-5 before:h-[2px] before:left-[50%] before:translate-x-[-50%] ">
+          <h3 className="mb-10 lg:text-[3em] text-3xl font-black text-blue-primary text-center relative before:absolute before:w-[100px] before:block before:bg-secondary before:-bottom-5 before:h-[2px] before:left-[50%] before:translate-x-[-50%] ">
             {accept_request_form?.head_text}
           </h3>
-          <p className="text-center lg:text-[1.2rem] leading-8 text-[#454547] mt-10">
+          <p className="text-center lg:text-[1.2rem] leading-8 text-[#454547] ">
             {about_page?.form?.sub_text}
           </p>
           <PatientAcceptForm lang={lang} dict={about_page} />

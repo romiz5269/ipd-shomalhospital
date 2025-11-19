@@ -46,14 +46,16 @@ export default function DoctorsFilterBox({
   return (
     <>
       <div className="grid grid-cols-12 gap-4 mt-16">
-        <div className="col-span-4">
+        <div className="md:col-span-4 col-span-12">
+         
           <CustomSelect
             value={expertise} // must be string
             onChange={setExpertise} // returns string
             options={options}
-            className="bg-white"
+            className="bg-white mt-2"
             isClearable
             placeholder={dict.select_this}
+            
           />
         </div>
         <div className="col-span-5">
@@ -65,12 +67,12 @@ export default function DoctorsFilterBox({
             className="bg-white py-4 px-6 rounded-2xl border-[1px] border-neutral-200 w-full focus:outline-secondary focus:outline-[1px]"
           /> */}
         </div>
-        
-        <div className="col-span-3">
+
+        <div className="md:col-span-3 col-span-12">
           <button
             type="button"
             onClick={applyFilters}
-            className="bg-blue-primary text-white font-medium w-full h-full rounded-2xl cursor-pointer"
+            className="bg-blue-primary text-white font-medium w-full h-full rounded-2xl cursor-pointer md:py-0 py-4"
           >
             {dict.search}
           </button>

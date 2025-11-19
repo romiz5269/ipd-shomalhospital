@@ -7,7 +7,7 @@ interface CustomLinkProps {
 }
 export default function CustomLink({href, label, className}: CustomLinkProps) {
   return (
-    <Link href={href} className={className }>
+    <Link href={href} className={className}>
       {label}
     </Link>
   );

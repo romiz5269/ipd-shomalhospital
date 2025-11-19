@@ -2,6 +2,8 @@
   "products": {
     "cart": "Add to Cart"
   },
+  "select_expertise": "Select expertise ...",
+
   "about_page": {
     "page_title": "About Us",
     "introduction": "Introduction to the International Patients Department",

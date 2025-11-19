@@ -2,6 +2,7 @@
   "products": {
     "cart": "أضف إلى السلة"
   },
+  "select_expertise":"اختر التخصص",
   "about_page": {
     "page_title": "من نحن",
     "introduction": "مقدمة عن قسم المرضى الدوليين",
