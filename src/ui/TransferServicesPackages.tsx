@@ -76,6 +76,13 @@ export default function TransferServicesPackages({
         <div>
           {openIndex === 1 && (
             <div className="bg-white p-10 mt-10 space-y-10">
+              <div
+                className="overflow-hidden text-gray-600 mt-2 leading-relaxed text-base introduction_description_subText"
+                dangerouslySetInnerHTML={{
+                  __html:
+                    transfer_service_page?.introduction.packages[0].dsc || "",
+                }}
+              />
               <div className="grid grid-cols-2 h-[300px]">
                 <div className="col-span-1 h-full">
                   <div className="h-full w-[100%] relative border-[1px] border-neutral-200 rounded-2xl overflow-hidden">
@@ -98,15 +105,6 @@ export default function TransferServicesPackages({
                   </div>
                 </div>
               </div>
-
-              <div
-                className="overflow-hidden text-gray-600 mt-2 leading-relaxed text-base introduction_description_subText"
-                dangerouslySetInnerHTML={{
-                  __html:
-                    transfer_service_page?.introduction.packages[0].dsc || "",
-                }}
-              />
-
               <div className="mb-20 space-y-6">
                 <h4 className="font-bold text-lg">
                   {transfer_service_page?.introduction.image_headTitle}
@@ -305,52 +303,7 @@ export default function TransferServicesPackages({
                 }}
               />
 
-              <div className="mb-20 space-y-6">
-                <h4 className="font-bold text-lg">
-                  {transfer_service_page?.introduction.image_headTitle}
-                </h4>
-                <div className="grid grid-cols-3 h-[300px]">
-                  <div className="col-span-1 h-full space-y-2">
-                    <div className="h-full w-[100%] relative border-[1px] border-neutral-200 rounded-2xl overflow-hidden">
-                      <Image
-                        src={`/transfer-packages/Picture3.jpg`}
-                        fill
-                        className="object-cover"
-                        alt=""
-                      />
-                    </div>
-                    <div className="text-center w-full">
-                      {transfer_service_page?.introduction.amol_museum}
-                    </div>
-                  </div>
-                  <div className="col-span-1 h-full space-y-2">
-                    <div className="h-full w-[100%] relative border-[1px] border-neutral-200 rounded-2xl overflow-hidden">
-                      <Image
-                        src={`/transfer-packages/Picture4.jpg`}
-                        fill
-                        className="object-cover"
-                        alt=""
-                      />
-                    </div>
-                    <div className="text-center w-full">
-                      {transfer_service_page?.introduction.grand_mosque}
-                    </div>
-                  </div>
-                  <div className="col-span-1 h-full space-y-2">
-                    <div className="h-full w-[100%] relative border-[1px] border-neutral-200 rounded-2xl overflow-hidden">
-                      <Image
-                        src={`/transfer-packages/Picture5.jpg`}
-                        fill
-                        className="object-cover"
-                        alt=""
-                      />
-                    </div>
-                    <div className="text-center w-full">
-                      {transfer_service_page?.introduction.fire_temple}
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div className="mb-20 space-y-6"></div>
 
               <>
                 <h4 className="font-bold text-lg">{package_price}:</h4>

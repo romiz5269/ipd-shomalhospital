@@ -68,9 +68,9 @@ export default async function DoctorsPage({
                 key={doctor.id}
                 className="lg:col-span-1 col-span-4 rounded-2xl border-[1px] border-neutral-200 overflow-hidden relative"
               >
-                <div className="lg:h-[250px] h-[200px] relative before:absolute before:bottom-0 before:bg-gradient-to-t before:from-white before:to-transparent before:z-10 before:w-full before:h-full before:top-0 before:right-0">
+                <div className="lg:h-[250px] h-[250px] relative before:absolute before:bottom-0 before:bg-gradient-to-t before:from-white before:to-transparent before:z-10 before:w-full before:h-full before:top-0 before:right-0">
                   <Image
-                    src="/doctor.jpg"
+                    src={doctor.image !=="#" ? `/${doctor.image}` : "/doctor.jpg"}
                     fill
                     alt=""
                     className="object-fill"
