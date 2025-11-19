@@ -4,11 +4,11 @@ import PageHeaderSlider from "@/ui/page-header-slider/PageHeaderSlider";
 import {toPersianNumber} from "@/utils/functions";
 import Image from "next/image";
 import React from "react";
-import { getDictionary } from "../dictionaries";
-import { Metadata } from "next";
-import { pages_titles } from "@/constants";
+import {getDictionary} from "../dictionaries";
+import {Metadata} from "next";
+import {pages_titles} from "@/constants";
 export const metadata: Metadata = {
-  title: pages_titles.doctors['fa'] + ' | ' +'بیمارستان شمال',
+  title: pages_titles.doctors["fa"] + " | " + "بیمارستان شمال",
   description: "Shomal Hospital IPD Doctors page",
 };
 
@@ -21,7 +21,14 @@ export default async function DoctorsPage({
 }) {
   const {lang} = await params;
   const {name = "", expertise = ""} = await searchParams;
-  const {our_doctors,license_number,search_by_name,search,select_expertise,doctors}=await getDictionary(lang)
+  const {
+    our_doctors,
+    license_number,
+    search_by_name,
+    search,
+    select_expertise,
+    doctors,
+  } = await getDictionary(lang);
   const filteredData = doctors.filter((doctor) => {
     const nameMatch = name
       ? Object.values(doctor.fullname.toString())
@@ -53,7 +60,7 @@ export default async function DoctorsPage({
             lang={lang}
             defaultName={name}
             defaultExpertise={expertise}
-            dict={{search,search_by_name,select_this:select_expertise}}
+            dict={{search, search_by_name, select_this: select_expertise}}
           />
           <div className="grid grid-cols-4 gap-10 mt-10 ">
             {filteredData?.map((doctor) => (
@@ -63,7 +70,7 @@ export default async function DoctorsPage({
               >
                 <div className="lg:h-[250px] h-[200px] relative before:absolute before:bottom-0 before:bg-gradient-to-t before:from-white before:to-transparent before:z-10 before:w-full before:h-full before:top-0 before:right-0">
                   <Image
-                    src="/doctor.png"
+                    src="/doctor.jpg"
                     fill
                     alt=""
                     className="object-fill"

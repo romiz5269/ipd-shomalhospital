@@ -27,9 +27,9 @@ export default function TopMenu({lang}: {lang: languages_types}) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <>
+    <div className="w-full">
       <div
-        className={`w-full z-30 transition-all duration-300 container flex lg:justify-around justify-between items-center 
+        className={`w-full z-30 transition-all duration-300 md:px-10 px-4 flex lg:justify-around justify-between items-center 
       ${
         isSticky
           ? "h-[80px] lg:fixed top-0 custom-shadow backdrop-blur-3xl bg-white/80"
@@ -102,6 +102,6 @@ export default function TopMenu({lang}: {lang: languages_types}) {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
