@@ -18,7 +18,7 @@ export default function LanguagesChanger({lang}: {lang: languages_types}) {
   };
   return (
     <>
-      <div className="text-white text-xs flex items-center justify-end gap-x-4 border-[1px] border-white px-4 py-1.5 rounded-full ">
+      <div className="md:text-white text-xs flex flex-wrap items-center md:justify-end justify-center gap-x-4 border-[1px] md:border-white md:px-4 py-1.5 rounded-full md:mt-0 mt-4">
         <span>
           <button
             type="button"

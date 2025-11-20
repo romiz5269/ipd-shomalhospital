@@ -40,7 +40,7 @@ export default function TopMenu({lang}: {lang: languages_types}) {
         {/* <div className="top-0 absolute h-[40px] bg-radial bg-secondary/30 backdrop-blur-2xl w-full">
 
       </div> */}
-        <div className="lg:w-[210px] flex gap-x-10 transition-all duration-300 items-center ">
+        <div className="lg:w-[210px] flex gap-x-3 transition-all duration-300 items-center ">
           <Link href={"/"} className="flex items-center gap-x-2">
             <div
               className={`relative ${
@@ -52,6 +52,23 @@ export default function TopMenu({lang}: {lang: languages_types}) {
               <Image
                 loading="lazy"
                 src="/shomalhospital-ipd-logo.png"
+                fill
+                alt="shomal hospital"
+                style={{color: "transparent", fill: "red", objectFit: "fill"}}
+              />
+            </div>
+          </Link>
+          <Link href={"/"} className="flex items-center gap-x-2">
+            <div
+              className={`relative ${
+                isSticky
+                  ? " h-[70px] w-[70px]"
+                  : "lg:h-[90px] h-[50px] lg:w-[97px] w-[40px]"
+              }`}
+            >
+              <Image
+                loading="lazy"
+                src="/main-logo-blue.png"
                 fill
                 alt="shomal hospital"
                 style={{color: "transparent", fill: "red", objectFit: "fill"}}

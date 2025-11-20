@@ -1,10 +1,11 @@
 "use client";
-import {DefaultMenuLinks} from "@/constants/menu/menu.const";
+import {DefaultMenuLinks, Menu_buttons} from "@/constants/menu/menu.const";
 import React, {useState} from "react";
 import CustomLink from "../global/CustomLink";
 import {languages_types} from "@/types";
 import ChevronLeftSvg from "../icons/ChevronLeftSvg";
 import {getHref} from "@/utils/functions";
+import LanguagesChanger from "../LanguagesChanger";
 
 export default function MobileMenu({lang}: {lang: languages_types}) {
   const [open, setOpen] = useState(false);
@@ -13,6 +14,7 @@ export default function MobileMenu({lang}: {lang: languages_types}) {
   const toggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
   return (
     <>
       <button
@@ -41,7 +43,6 @@ export default function MobileMenu({lang}: {lang: languages_types}) {
         <div
           className="lg:hidden fixed top-0 right-0 z-50 bg-black/30 backdrop-blur-sm w-full h-screen"
           onClick={(e) => {
-            
             setOpen(!open);
           }}
         >
@@ -49,7 +50,7 @@ export default function MobileMenu({lang}: {lang: languages_types}) {
             className={`absolute top-0 right-0 h-full ${
               open ? "w-[80%]" : "w-0"
             } bg-white transition-all duration-300`}
-            onClick={(e)=>e.stopPropagation()}
+            onClick={(e) => e.stopPropagation()}
           >
             <div className="p-4">
               <div className="w-full flex items-center justify-end">
@@ -71,23 +72,18 @@ export default function MobileMenu({lang}: {lang: languages_types}) {
                 </button>
               </div>
 
-              <div className="mt-5">
+              <div className="mt-5 h-[430px] overflow-auto">
                 {DefaultMenuLinks.map((link) => (
                   <div key={link.id} className="w-full h-fit">
                     {link.sub.length > 0 ? (
                       <div className="flex items-center justify-between">
                         <div className="w-full  space-y-4 overflow-hidden">
-                          <div
-                            key={link.id}
-                            className="rounded-2xl py-4"
-                          >
+                          <div key={link.id} className="rounded-2xl py-4">
                             <button
                               className="flex w-full items-center justify-between text-right h-full cursor-pointer"
                               onClick={() => toggle(link.id)}
                             >
-                              <span >
-                                {link.label[lang]}
-                              </span>
+                              <span>{link.label[lang]}</span>
                               <span
                                 className={`transition-all duration-300  ${
                                   openIndex === link.id
@@ -133,6 +129,31 @@ export default function MobileMenu({lang}: {lang: languages_types}) {
                     )}
                   </div>
                 ))}
+                <LanguagesChanger lang={lang} />
+                <div className="col-span-4 flex flex-col items-center justify-center gap-y-2 mt-3">
+                  
+
+                  <CustomLink
+                    href={getHref("/contact-us#request_accept", lang)}
+                    label={
+                      Menu_buttons.request_to_accept[lang as languages_types] ||
+                      ""
+                    }
+                    className={`bg-blue-primary text-white rounded-full w-full 
+                      py-4 px-6
+                    text-sm font-semibold shadow-lg flex items-center whitespace-nowrap  shadow-neutral-300 hover:shadow-none transition-all duration-200`}
+                  />
+                  <CustomLink
+                    href={getHref("/upload-documents", lang)}
+                    label={
+                      Menu_buttons.upload_document[lang as languages_types] ||
+                      ""
+                    }
+                    className={`bg-secondary text-white rounded-full 
+                      py-4 px-6
+                    text-sm font-semibold shadow-lg flex items-center w-full  whitespace-nowrap shadow-neutral-300 hover:shadow-none transition-all duration-200`}
+                  />
+                </div>
               </div>
             </div>
           </div>
