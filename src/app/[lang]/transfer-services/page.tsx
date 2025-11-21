@@ -45,10 +45,10 @@ export default async function TransferServicePage({
               __html: transfer_service_page.introduction?.head_text,
             }}
           />
-          <div className="grid grid-cols-2 gap-x-10 lg:gap-y-0 gap-y-4 mt-10 lg:h-[600px]">
+          <div className="grid grid-cols-2 gap-x-10 lg:gap-y-0 gap-y-4 mt-10 ">
             <div className="lg:col-span-1 col-span-3 rounded-2xl border-[1px] border-neutral-200 overflow-hidden relative">
-              <div className="lg:h-[410px] h-[300px] relative before:absolute before:bottom-0 before:bg-gradient-to-t before:from-white before:to-transparent before:z-10 before:w-full before:h-full before:top-0 before:right-0">
-                <Image src="/doctor.jpg" fill alt="" className="object-fill" />
+              <div className="lg:h-[450px] h-[300px] relative before:absolute before:bottom-0 before:bg-gradient-to-t before:from-white before:to-transparent before:z-10 before:w-full before:h-full before:top-0 before:right-0">
+                <Image src="/mojgan_yaghoubi.jpg" fill alt="" className="object-fill" />
               </div>
               <div className=" h-full px-6 py-10 space-y-2 ">
                 <h3 className="lg:text-2xl text-lg font-black text-black">
@@ -89,7 +89,7 @@ export default async function TransferServicePage({
               </div>
             </div>
             <div className="lg:col-span-1 col-span-3 rounded-2xl border-[1px] border-neutral-200 overflow-hidden relative">
-              <div className="lg:h-[410px] h-[300px] relative before:absolute before:bottom-0 before:bg-gradient-to-t before:from-white before:to-transparent before:z-10 before:w-full before:h-full before:top-0 before:right-0">
+              <div className="lg:h-[450px] h-[300px] relative before:absolute before:bottom-0 before:bg-gradient-to-t before:from-white before:to-transparent before:z-10 before:w-full before:h-full before:top-0 before:right-0">
                 <Image src="/doctor.jpg" fill alt="" className="object-fill" />
               </div>
               <div className=" h-full px-6 py-10 space-y-2 ">

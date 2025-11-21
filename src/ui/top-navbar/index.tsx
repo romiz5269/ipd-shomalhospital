@@ -27,7 +27,7 @@ export default function TopNavbar({lang}: {lang: languages_types}) {
           </span>
         </div>
         <div className="lg:flex hidden items-center justify-end gap-x-4 ">
-          <a
+          {/* <a
             href="https://instagram.com/shomalhospital"
             className="flex items-center justify-start gap-x-1 text-white"
           >
@@ -44,7 +44,7 @@ export default function TopNavbar({lang}: {lang: languages_types}) {
               />
             </svg>
           </a>
-          <span className="text-white"> | </span>
+          <span className="text-white"> | </span> */}
 
           <a href="https://instagram.com/shomalhospital">
             <svg
