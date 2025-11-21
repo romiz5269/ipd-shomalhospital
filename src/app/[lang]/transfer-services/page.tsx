@@ -135,7 +135,7 @@ export default async function TransferServicePage({
           <h3
             className={`lg:text-[3em] text-3xl font-black text-blue-primary text-center relative before:absolute before:w-[100px] before:block before:bg-secondary before:-bottom-5 before:h-[2px] before:left-[50%] before:translate-x-[-50%] `}
           >
-            {transfer_service_page.page_title}
+            {transfer_service_page.jobs_title}
           </h3>
           <div
             className="mt-20 introduction_description_subText"

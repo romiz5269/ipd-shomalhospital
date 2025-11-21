@@ -1,7 +1,7 @@
 "use client";
 import React, {useState} from "react";
 import CustomSelect from "../components/global/CustomSelect";
-import {all_countries} from "@/constants";
+import {all_countries, default_info, PHONE_NUMBERS} from "@/constants";
 import {generateIPDConsultantCode} from "@/utils/functions";
 
 interface PatientAcceptFormValues {
@@ -49,7 +49,7 @@ function PatientConsultantForm({lang, dict}: PatientAcceptFormProps) {
   });
 
   const sendToWhatsApp = (formData: PatientAcceptFormValues) => {
-    const phone = "989385745269"; // بدون + و با کد کشور
+    const phone = PHONE_NUMBERS.ipd_technician.href; // بدون + و با کد کشور
     const message =
       `درخواست  مشاوره جدید ثبت شد:\n` +
       `شناسه تولید شده: ${generateIPDConsultantCode()}\n` +
@@ -66,7 +66,7 @@ function PatientConsultantForm({lang, dict}: PatientAcceptFormProps) {
     window.open(`https://wa.me/${phone}?text=${encoded}`, "_blank");
   };
   const sendToEmail = (formData: PatientAcceptFormValues) => {
-    const email = "mojtaba5269@gmail.com";
+    const email = default_info.email;
     const subject = "درخواست  مشاوره جدید ارسال شد";
 
     const message =

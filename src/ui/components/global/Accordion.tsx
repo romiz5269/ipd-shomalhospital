@@ -3,7 +3,7 @@
 import {useState} from "react";
 import ChevronLeftSvg from "../icons/ChevronLeftSvg";
 import Image from "next/image";
-import { default_info } from "@/constants";
+import { default_info, PHONE_NUMBERS } from "@/constants";
 
 interface AccordionProps {
   title: string;
@@ -105,7 +105,7 @@ export default function Accordion({
                 </h4>
                 <div className="overflow-hidden text-gray-600  leading-relaxed text-base ">
                   <div>ایمیل : <a href={`mailto:${default_info.email}`}>{default_info.email}</a></div>
-                  <div>واتساپ : <a href={`https://wa.me/${+default_info.phone_number}`}>{default_info.phone_number}</a></div>
+                  <div>واتساپ : <a dir="ltr" href={`https://wa.me/${+PHONE_NUMBERS.ipd_technician.href}`}>{PHONE_NUMBERS.ipd_technician.href}</a></div>
                 </div>
               </>
             </div>

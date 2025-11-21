@@ -5,10 +5,10 @@ import Image from "next/image";
 import React from "react";
 import {getDictionary} from "../dictionaries";
 import PatientAcceptForm from "@/ui/forms/PatientAcceptForm";
-import { default_info, pages_titles } from "@/constants";
-import { Metadata } from "next";
+import {default_info, pages_titles, PHONE_NUMBERS} from "@/constants";
+import {Metadata} from "next";
 export const metadata: Metadata = {
-  title: pages_titles.contact_us['fa'] + ' | ' +'بیمارستان شمال',
+  title: pages_titles.contact_us["fa"] + " | " + "بیمارستان شمال",
   description: "Shomal Hospital IPD contact us page",
 };
 export default async function ContactUs({
@@ -32,7 +32,12 @@ export default async function ContactUs({
             <div className="md:col-span-8 col-span-12 grid grid-cols-12 md:gap-x-20">
               <div className="md:col-span-3 col-span-12  bg-amber-50">
                 <div className="relative md:h-[200px] h-[250px] md:w-[200px] w-full  rounded-xl overflow-hidden ">
-                  <Image fill src={"/heidarnejad.jpg"} alt="doctor" className="object-fill" />
+                  <Image
+                    fill
+                    src={"/heidarnejad.jpg"}
+                    alt="doctor"
+                    className="object-fill"
+                  />
                 </div>
               </div>
               <div className="md:col-span-9 col-span-12  items-center md:my-0 my-4">
@@ -56,7 +61,12 @@ export default async function ContactUs({
                     <TelephoneSvg size="60" />
                   </span>
                   <span className="text-lg text-white font-semibold">
-                    <a href={`tel:${footer?.contact_us?.ipd_technician_number}`}>{footer?.contact_us?.ipd_technician_number}</a>
+                    <a
+                      dir="ltr"
+                      href={`tel:${PHONE_NUMBERS.ipd_technician.href}`}
+                    >
+                      {PHONE_NUMBERS.ipd_technician.href}
+                    </a>
                   </span>
                 </div>
                 <div className="md:col-span-1 col-span-12 flex flex-col justify-start items-center gap-y-4">
@@ -75,7 +85,11 @@ export default async function ContactUs({
                     </svg>
                   </span>
                   <span className="text-lg text-white font-semibold">
-                    <a href={`mailto:${default_info.email}`}>{default_info.email}</a>
+                    <a
+                      href={`mailto:${default_info.email}`}
+                    >
+                      {default_info.email}
+                    </a>
                   </span>
                 </div>
               </div>
@@ -143,10 +157,23 @@ export default async function ContactUs({
                       <TelephoneSvg size="40" />
                     </span>
                   </div>
-                  <a href="tel:+989385745269" className="text-xl">
-                    {footer?.contact_us?.ipd_technician_number} |{" "}
-                    {footer?.contact_us?.hospital_number}
-                  </a>
+                  <div className="flex items-center gap-x-2">
+                    <a
+                      dir="ltr"
+                      href={`tel:${PHONE_NUMBERS.ipd_technician.href}`}
+                      className="text-xl"
+                    >
+                      {PHONE_NUMBERS.ipd_technician.href}
+                    </a>
+                    <span>|</span>
+                    <a
+                      dir="ltr"
+                      href={`tel:${PHONE_NUMBERS.hospital.href}`}
+                      className="text-xl"
+                    >
+                      {PHONE_NUMBERS.hospital.label}
+                    </a>
+                  </div>
                 </div>
                 <span className="w-full inline-block h-[2px] bg-secondary/20"></span>
                 <div className="flex items-center gap-x-3">

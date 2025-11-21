@@ -1,7 +1,7 @@
 "use client";
 import React, {useState} from "react";
 import CustomSelect from "../components/global/CustomSelect";
-import {all_countries} from "@/constants";
+import {all_countries, default_info, PHONE_NUMBERS} from "@/constants";
 import { generateIPDReceptionCode } from "@/utils/functions";
 
 interface PatientAcceptFormValues {
@@ -50,7 +50,7 @@ function PatientAcceptForm({lang, dict}: PatientAcceptFormProps) {
   });
 
   const sendToWhatsApp = (formData: PatientAcceptFormValues) => {
-    const phone = "9112211874"; // بدون + و با کد کشور
+    const phone = PHONE_NUMBERS.ipd_technician.href; // بدون + و با کد کشور
     const message =
       `درخواست پذیرش جدید ثبت شد:\n` +
       `شناسه تولید شده: ${generateIPDReceptionCode()}\n` +
@@ -68,7 +68,7 @@ function PatientAcceptForm({lang, dict}: PatientAcceptFormProps) {
     window.open(`https://wa.me/${phone}?text=${encoded}`, "_blank");
   };
   const sendToEmail = (formData: PatientAcceptFormValues) => {
-    const email = "mojtaba5269@gmail.com";
+    const email = default_info.email;
     const subject = "درخواست پذیرش جدید";
 
     const message =

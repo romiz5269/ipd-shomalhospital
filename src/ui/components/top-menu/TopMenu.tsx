@@ -41,7 +41,7 @@ export default function TopMenu({lang}: {lang: languages_types}) {
 
       </div> */}
         <div className="lg:w-[210px] flex gap-x-3 transition-all duration-300 items-center ">
-          <Link href={"/"} className="flex items-center gap-x-2">
+          {/* <Link href={"/"} className="flex items-center gap-x-2">
             <div
               className={`relative ${
                 isSticky
@@ -57,7 +57,7 @@ export default function TopMenu({lang}: {lang: languages_types}) {
                 style={{color: "transparent", fill: "red", objectFit: "fill"}}
               />
             </div>
-          </Link>
+          </Link> */}
           <Link href={"/"} className="flex items-center gap-x-2">
             <div
               className={`relative ${

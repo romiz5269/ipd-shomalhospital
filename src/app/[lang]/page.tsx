@@ -23,7 +23,7 @@ export default async function Page({
 
       <section className="lg:mb-24 mb-10 lg:mt-10 mt-4 container ">
         <div className="bg-[#F8F9FA] rounded-4xl lg:px-40 lg:py-16 p-2">
-          {/* <div className="mb-5 flex items-center justify-center">
+          <div className="mb-5 flex items-center justify-center">
             <div className="rounded-xl overflow-hidden relative w-[140px] h-[140px]">
               <Image
                 src={"/shomalhospital-ipd-logo.jpg"}
@@ -32,7 +32,7 @@ export default async function Page({
                 fill
               />
             </div>
-          </div> */}
+          </div>
           <h3 className="lg:text-[3em] text-3xl font-black text-blue-primary text-center relative before:absolute before:w-[100px] before:block before:bg-secondary before:-bottom-5 before:h-[2px] before:left-[50%] before:translate-x-[-50%] ">
             {about_page?.introduction}
           </h3>

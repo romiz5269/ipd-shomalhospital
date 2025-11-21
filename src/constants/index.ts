@@ -151,8 +151,8 @@ export const MEDICAL_PACKAGES = PACKAGE_SERVICES.map((item) => ({
 
 export const PHONE_NUMBERS = Object.freeze({
   ipd_technician: {
-    label: "09385745269",
-    href: "+989385745269",
+    label: "+989379819946",
+    href: "+989379819946",
   },
   hospital: {
     label: "011-4492",

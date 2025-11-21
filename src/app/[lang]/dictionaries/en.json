@@ -214,6 +214,8 @@
       "grand_mosque": "Amol Grand Mosque",
       "fire_temple": "Amol Fire Temple"
     },
+        "jobs_title": "Duties of this team",
+
     "jobs": "<ul><li>Responding to initial inquiries from patients and agents</li><li>Medical visa issuance and travel insurance</li><li>Booking accommodations based on patient budget and preferences (hotel, guesthouse, apartment)</li><li>Airport transfer to hospital or residence</li><li>Planning recreational and cultural tours in Amol and nearby areas (depending on patient health)</li><li>Accompanying tourist interpreter if needed</li><li>Arranging companion accommodation and transportation services</li></ul>",
     "services": "<ul><li>Full coordination before arrival</li><li>Coordination with Shomal Hospital for medical records review, specialist consultation, and cost estimation</li><li>Airport pick-up and reception</li><li>Private transfer to hospital or hotel</li><li>Accompanying multilingual tour guide and interpreter</li><li>Hotel reservation in partnership with international-standard hotels near the hospital</li><li>Administrative support (medical visa invitation letter, customs and residency assistance)</li><li>Full coordination with Shomal Hospital: immediate appointments and referrals to the best specialists</li><li>Post-discharge follow-up (medical file delivery, communication with physician, and answering patient questions)</li></ul><p><strong>Basic Service Fee:</strong> Includes transfer, guide, shared double room accommodation, visa issuance – 1500 USD</p><p><strong>Optional Tours:</strong> If patient is in good condition – Larijan hot springs full-board stay</p>"
   },
@@ -312,22 +314,7 @@
       },
       "doctor_identify_number": 153927
     },
-    {
-      "id": 7,
-      "fullname": "Dr. Ebrahim Ghasemi",
-      "image": "#",
-      "specialties": [
-        {
-          "id": 1,
-          "name": "Orthopedic Specialist"
-        }
-      ],
-      "category": {
-        "id": 1,
-        "name": "Orthopedics"
-      },
-      "doctor_identify_number": 39212
-    },
+    
     {
       "id": 8,
       "fullname": "Dr. Hamzeh Ebrahimi Pakzad",
@@ -535,7 +522,7 @@
       "specialties": [
         {
           "id": 1,
-          "name": "Gynecologist"
+          "name": "Obstetrician and Gynecologist"
         },
         {
           "id": 2,
@@ -571,7 +558,7 @@
       "specialties": [
         {
           "id": 1,
-          "name": "Gynecologist"
+          "name": "Obstetrician and Gynecologist"
         }
       ],
       "category": {
@@ -603,7 +590,7 @@
       "specialties": [
         {
           "id": 1,
-          "name": "Gynecologist"
+          "name": "Obstetrician and Gynecologist"
         }
       ],
       "category": {
@@ -1443,7 +1430,7 @@
           "slug": "cardiac-angiography",
           "svg": "",
           "title": "Cardiac Angiography",
-          "thumbnail": "Picture5.webp",
+          "thumbnail": "Picture5.jpg",
           "description": "<p>Coronary angiography is a medical imaging procedure used to examine the coronary arteries that supply blood to the heart muscle. Using X-ray imaging, this procedure helps detect any narrowing or blockage within these vital vessels.</p><p>Cardiac angiography is part of a broader procedure called cardiac catheterization, in which one or more thin, flexible tubes called catheters are inserted through a small puncture in the wrist or groin and guided through the blood vessels to reach the coronary arteries.</p><p>A diagnostic angiography typically takes about 30–60 minutes and is usually performed as an outpatient procedure or with short-term hospitalization (half-day).</p>",
 
           "services": "<ul><li>Consultation with a cardiologist (interventional cardiology specialist)</li><li>Pre-procedure laboratory tests (CBC, blood sugar, kidney function, coagulation, cardiac markers, viral screening)</li><li>Electrocardiogram (ECG) + Echocardiography</li><li>Diagnostic coronary angiography via femoral or radial artery</li><li>Post-angiography care + one-night stay in a VIP room</li><li>Post-angiography medication prescription</li><li>Professional medical interpreter (Arabic / English / Russian)</li><li>Round-trip airport transfer</li><li>CD & full medical report in the patient's language</li></ul>",
@@ -1495,7 +1482,7 @@
           "svg": "",
           "title": "Implantation of Cardiac Devices (CRT)",
 
-          "thumbnail": "Picture8.jpg",
+          "thumbnail": "Picture8.png",
           "description": "<p>The CRT pacemaker is one of the most advanced types of heart devices, controlling the intensity and number of heartbeats by being placed in different chambers of the heart. Systolic heart failure is a common disease worldwide and a major type of heart failure.</p><p>With the use of various cardiac medications, patients’ life expectancy and quality of life have improved; additionally, one of the most important tools in treating these patients is the CRT pacemaker, which can significantly and directly improve their quality of life.</p><p>In patients with systolic heart failure (e.g., after MI, high blood pressure, etc.), the heart does not contract uniformly, and parts of the ventricular myocardium start contracting with a delay. This condition is called Dyssynchrony, which appears as a wide QRS complex on ECG (QRS > 120 ms indicates dyssynchrony).</p><p>When the myocardium does not contract uniformly, the filling time decreases. Consequently, the blood ejected to the vascular bed and the ejection fraction (EF) also decrease. The CRT pacemaker, through its electrical activity, reduces this dyssynchrony, increases ventricular blood ejection, and can largely restore the heart's function to normal.</p><p>The procedure duration and hospitalization for pacemaker implantation depend on the type of pacemaker (single, dual, or triple chamber) and the patient’s condition.</p><p>Here is an overview based on standard procedures:</p><ol><li><strong>Surgery Duration:</strong> Pacemaker implantation is usually a relatively quick procedure, typically lasting 1–3 hours. The duration varies depending on the difficulty of placing electrodes (pacemaker leads) in the heart chambers.</li><li><strong>Hospitalization and Stay Duration:</strong> Hospitalization for pacemaker implantation is usually slightly longer than for cardiac ablation. <ul><li>Recovery/CCU: Immediately after the procedure, the patient is monitored closely for several hours to check for bleeding at the small incision site (usually under the clavicle or upper chest) and to ensure the device functions properly.</li><li>Cardiac Ward: After stabilization, the patient is transferred to a general cardiac ward.</li><li>Number of nights: Patients are usually hospitalized 1–2 nights after pacemaker implantation.</li><li>One night: For simple cases without complications, the patient may be discharged the next day.</li><li>Two nights: This additional time ensures the device works well for a longer period and that ECG changes remain stable after several hours of rest.</li></ul></li><li><strong>Doctor Visits:</strong> Daily visits are provided. The cardiologist (electrophysiologist or heart specialist) checks the wound site and pacemaker function at least once per day.</li></ol>",
 
           "services": "<ul><li>Main device with warranty</li><li>Advanced operating room with fluoroscopy</li><li>2–3 nights hospitalization in VIP room</li><li>Device programming follow-up and patient education</li><li>Translator, transfer, medications, and detailed report</li></ul>",

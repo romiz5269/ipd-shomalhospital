@@ -9,6 +9,7 @@ import CustomLink from "@/ui/components/global/CustomLink";
 import {getHref} from "@/utils/functions";
 import {languages_types} from "@/types";
 import {getDictionary} from "./dictionaries";
+import { PHONE_NUMBERS } from "@/constants";
 
 export const metadata: Metadata = {
   title: "بیماران بین الملل | بیمارستان شمال آمل",
@@ -99,7 +100,7 @@ export default async function RootLayout({
                     </strong>{" "}
                     : &nbsp;
                     <span style={{direction: "ltr"}}>
-                      {footer?.contact_us?.ipd_technician_number}
+                      <a dir="ltr" style={{textAlign:"left"}} href={`tel:${PHONE_NUMBERS.ipd_technician.href}`}>{PHONE_NUMBERS.ipd_technician.label}</a>
                     </span>
                   </p>
                   <p className="my-4 rtl text-sm">
@@ -108,7 +109,7 @@ export default async function RootLayout({
                     </strong>{" "}
                     : &nbsp;
                     <span style={{direction: "ltr"}}>
-                      {footer?.contact_us?.hospital_number}
+                      <a dir="ltr" style={{textAlign:"left"}} href={`tel:${PHONE_NUMBERS.hospital.href}`}>{PHONE_NUMBERS.hospital.label}</a>
                     </span>
                   </p>
                   <div className="relative w-full pb-[56.25%] rounded-xl overflow-hidden">
