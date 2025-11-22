@@ -115,8 +115,10 @@ export default async function Page({
           </div>
           <div className="grid grid-cols-3 gap-x-10 lg:gap-y-0 gap-y-4 mt-10 lg:h-[600px]">
             <div className="lg:col-span-1 col-span-3 rounded-2xl border-[1px] border-neutral-200 overflow-hidden relative">
-              <div className="lg:h-[410px] h-[300px] relative before:absolute before:bottom-0 before:bg-gradient-to-t before:from-white before:to-transparent before:z-10 before:w-full before:h-full before:top-0 before:right-0">
-                <Image src="/jafarian.jpg" fill alt="" className="object-fill" />
+              <div className="lg:h-[430px] h-[300px] relative before:absolute before:bg-gradient-to-t  before:from-white before:to-transparent before:z-10 before:w-full before:h-[70%] before:bottom-0 before:right-0 overflow-hidden">
+                <Image src="/jafarian.jpg" fill alt="" 
+                className="object-fill hover:scale-110 transition-all duration-300" 
+                />
               </div>
               <div className=" h-full px-6 py-10 space-y-2 ">
                 <h3 className="lg:text-2xl text-lg font-black text-black">
@@ -135,12 +137,12 @@ export default async function Page({
               </div>
             </div>
             <div className="lg:col-span-1 col-span-3 rounded-2xl border-[1px] border-neutral-200 overflow-hidden relative">
-              <div className="lg:h-[410px] h-[300px] relative before:absolute before:bottom-0 before:bg-gradient-to-t before:from-white before:to-transparent before:z-10 before:w-full before:h-full before:top-0 before:right-0">
+              <div className="lg:h-[430px] h-[300px] relative before:absolute before:bg-gradient-to-t  before:from-white before:to-transparent before:z-10 before:w-full before:h-[70%] before:bottom-0 before:right-0 overflow-hidden">
                 <Image
                   src="/motamedi.jpg"
                   fill
                   alt=""
-                  className="object-fill "
+                className="object-fill hover:scale-110 transition-all duration-300" 
                 />
               </div>
               <div className=" h-full px-6 py-10 space-y-2 ">
@@ -161,12 +163,12 @@ export default async function Page({
             </div>
 
             <div className="lg:col-span-1 col-span-3 rounded-2xl border-[1px] border-neutral-200 overflow-hidden relative">
-              <div className="lg:h-[410px] h-[300px] relative before:absolute before:bottom-0 before:bg-gradient-to-t before:from-white before:to-transparent before:z-10 before:w-full before:h-full before:top-0 before:right-0">
+              <div className="lg:h-[430px] h-[300px] relative before:absolute before:bg-gradient-to-t  before:from-white before:to-transparent before:z-10 before:w-full before:h-[70%] before:bottom-0 before:right-0 overflow-hidden">
                 <Image
                   src="/heidarnejad.jpg"
                   fill
                   alt=""
-                  className="object-cover "
+                className="object-fill hover:scale-110 transition-all duration-300" 
                 />
               </div>
               <div className=" h-full px-6 py-10 space-y-2 ">
