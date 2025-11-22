@@ -1426,11 +1426,7 @@
       "svg": "CardiacSvg",
       "is_parent": true,
 
-      "title": {
-        "fa": "پکیج قلب",
-        "en": "Cardiac Health Package",
-        "ar": "باقة القلب"
-      },
+      "title":"باقة القلب",
       "content": {},
       "sub_packages": [
         {
@@ -1732,11 +1728,11 @@
     },
     {
       "id": 7,
-      "slug": "ent",
+      "slug": "Otolaryngology",
       "svg": "EntSvg",
       "is_parent": true,
 
-      "title": "باقة الأذن والأنف والحنجرة",
+      "title": "طب الأنف والأذن والحنجرة",
       "content": {},
       "sub_packages": [
         {
