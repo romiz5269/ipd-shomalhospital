@@ -10,7 +10,7 @@ export default async function SingleMedicalService({
   params: Promise<{slug: string; lang: "fa" | "en"}>;
 }) {
   const {slug, lang} = await params;
-  const {medical_packages_data} = await getDictionary(lang);
+  const {medical_packages_data,package_price,served_jobs,email,whatsapp,important_notes} = await getDictionary(lang);
 
   const data = medical_packages_data.find((p) => p.slug.toString() === slug);
 
@@ -28,7 +28,7 @@ export default async function SingleMedicalService({
       <section className="mt-16 container">
         <div className="bg-[#F8F9FA] rounded-4xl md:px-20 px-4 md:py-16 py-4">
           <h3 className="md:text-[3em] text-xl font-black text-blue-primary text-center relative before:absolute before:w-[100px] before:block before:bg-secondary before:-bottom-5 before:h-[2px] before:left-[50%] before:translate-x-[-50%] ">
-            انواع خدمات پزشکی {data?.title.toString()}
+         {data?.title.toString()}
           </h3>
           <div className="mt-10 space-y-6">
             {data.sub_packages.map((item, index: number) =>
@@ -42,6 +42,11 @@ export default async function SingleMedicalService({
                   price={item?.price?.toString() ?? ""}
                   thumbnail={item?.thumbnail ?? ""}
                   notes={item?.notes?.toString() || ""}
+                  package_price={package_price}
+                  served_jobs={served_jobs}
+                  email={email}
+                  whatsapp={whatsapp}
+                  important_notes={important_notes}
                 />
               ) : (
                 ""

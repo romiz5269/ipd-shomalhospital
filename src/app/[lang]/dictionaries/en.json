@@ -214,7 +214,7 @@
       "grand_mosque": "Amol Grand Mosque",
       "fire_temple": "Amol Fire Temple"
     },
-        "jobs_title": "Duties of this team",
+    "jobs_title": "Duties of this team",
 
     "jobs": "<ul><li>Responding to initial inquiries from patients and agents</li><li>Medical visa issuance and travel insurance</li><li>Booking accommodations based on patient budget and preferences (hotel, guesthouse, apartment)</li><li>Airport transfer to hospital or residence</li><li>Planning recreational and cultural tours in Amol and nearby areas (depending on patient health)</li><li>Accompanying tourist interpreter if needed</li><li>Arranging companion accommodation and transportation services</li></ul>",
     "services": "<ul><li>Full coordination before arrival</li><li>Coordination with Shomal Hospital for medical records review, specialist consultation, and cost estimation</li><li>Airport pick-up and reception</li><li>Private transfer to hospital or hotel</li><li>Accompanying multilingual tour guide and interpreter</li><li>Hotel reservation in partnership with international-standard hotels near the hospital</li><li>Administrative support (medical visa invitation letter, customs and residency assistance)</li><li>Full coordination with Shomal Hospital: immediate appointments and referrals to the best specialists</li><li>Post-discharge follow-up (medical file delivery, communication with physician, and answering patient questions)</li></ul><p><strong>Basic Service Fee:</strong> Includes transfer, guide, shared double room accommodation, visa issuance – 1500 USD</p><p><strong>Optional Tours:</strong> If patient is in good condition – Larijan hot springs full-board stay</p>"
@@ -314,7 +314,7 @@
       },
       "doctor_identify_number": 153927
     },
-    
+
     {
       "id": 8,
       "fullname": "Dr. Hamzeh Ebrahimi Pakzad",
@@ -1378,7 +1378,7 @@
           "slug": "combined-endoscopy-colonoscopy",
           "svg": "",
           "title": "Combined Upper Endoscopy & Colonoscopy",
-          "description": "<p>This package provides both upper endoscopy and full colonoscopy in a single session, allowing a complete evaluation of the digestive tract. It is ideal for patients requiring comprehensive screening or diagnosis of gastrointestinal disorders.</p>",
+          "description": "",
           "price": "",
           "notes": ""
         }
@@ -1838,5 +1838,8 @@
         }
       ]
     }
-  ]
+  ],
+  "served_jobs": "Services that can be provided to the patient include:",
+  "important_notes": "Important Notes",
+  "whatsapp": "WhatsApp"
 }

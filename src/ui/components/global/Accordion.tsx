@@ -3,7 +3,7 @@
 import {useState} from "react";
 import ChevronLeftSvg from "../icons/ChevronLeftSvg";
 import Image from "next/image";
-import { default_info, PHONE_NUMBERS } from "@/constants";
+import {default_info, PHONE_NUMBERS} from "@/constants";
 
 interface AccordionProps {
   title: string;
@@ -12,6 +12,11 @@ interface AccordionProps {
   services: string;
   notes?: string | undefined;
   price: string;
+  package_price?: string;
+  served_jobs?: string;
+  email?: string;
+  important_notes?: string;
+  whatsapp?: string;
   defaultOpen?: number;
   index: number;
 }
@@ -24,6 +29,11 @@ export default function Accordion({
   notes = "",
   thumbnail,
   price,
+  package_price,
+  served_jobs,
+  important_notes,
+  email,
+  whatsapp,
   defaultOpen,
 }: AccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(
@@ -41,7 +51,9 @@ export default function Accordion({
           className="flex w-full items-center justify-between text-right h-full cursor-pointer"
           onClick={() => toggle(index)}
         >
-          <span className="md:text-lg text-sm font-semibold text-white">{title}</span>
+          <span className="md:text-lg text-sm font-semibold text-white">
+            {title}
+          </span>
           <span
             className={` text-white transition-all duration-300  ${
               openIndex === index ? "rotate-90" : "-rotate-90"
@@ -73,7 +85,7 @@ export default function Accordion({
               {services && (
                 <>
                   <h4 className="font-bold text-lg">
-                    خدمات قابل ارائه به بيمار شامل:
+                    {served_jobs} : 
                   </h4>
                   <div
                     className="overflow-hidden text-gray-600  leading-relaxed text-base packages_subpackages_list"
@@ -83,7 +95,7 @@ export default function Accordion({
               )}
               {price && (
                 <>
-                  <h4 className="font-bold text-lg">قیمت پکیج ها:</h4>
+                  <h4 className="font-bold text-lg">{package_price}:</h4>
                   <div
                     className="overflow-hidden text-gray-600  leading-relaxed text-base packages_subpackages_list"
                     dangerouslySetInnerHTML={{__html: price}}
@@ -92,7 +104,7 @@ export default function Accordion({
               )}
               {notes && (
                 <>
-                  <h4 className="font-bold text-lg">نکات مهم :</h4>
+                  <h4 className="font-bold text-lg">{important_notes} :</h4>
                   <div
                     className="overflow-hidden text-gray-600  leading-relaxed text-base "
                     dangerouslySetInnerHTML={{__html: notes}}
@@ -100,12 +112,24 @@ export default function Accordion({
                 </>
               )}
               <>
-                <h4 className="font-bold text-lg">
-                  
-                </h4>
+                <h4 className="font-bold text-lg"></h4>
                 <div className="overflow-hidden text-gray-600  leading-relaxed text-base ">
-                  <div>ایمیل : <a href={`mailto:${default_info.email}`}>{default_info.email}</a></div>
-                  <div>واتساپ : <a dir="ltr" href={`https://wa.me/${+PHONE_NUMBERS.ipd_technician.href}`}>{PHONE_NUMBERS.ipd_technician.href}</a></div>
+                  <div>
+                    {email} :{" "}
+                    <a href={`mailto:${default_info.email}`}>
+                      {default_info.email}
+                    </a>
+                  </div>
+                  <div>
+                    {whatsapp} :{" "}
+                    <a
+                      dir="ltr"
+                      href={`https://wa.me/${+PHONE_NUMBERS.ipd_technician
+                        .href}`}
+                    >
+                      {PHONE_NUMBERS.ipd_technician.href}
+                    </a>
+                  </div>
                 </div>
               </>
             </div>

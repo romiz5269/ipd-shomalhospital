@@ -2,14 +2,13 @@ import PageHeaderSlider from "@/ui/page-header-slider/PageHeaderSlider";
 import Link from "next/link";
 import React, {lazy, Suspense} from "react";
 import {packages_types} from "@/types";
-import { getDictionary } from "../dictionaries";
-import { Metadata } from "next";
-import { pages_titles } from "@/constants";
+import {getDictionary} from "../dictionaries";
+import {Metadata} from "next";
+import {pages_titles} from "@/constants";
 export const metadata: Metadata = {
-  title: pages_titles.medical_services['fa'] + ' | ' +'بیمارستان شمال',
+  title: pages_titles.medical_services["fa"] + " | " + "بیمارستان شمال",
   description: "Shomal Hospital IPD medical services page",
 };
-
 
 export default async function MedicalServices({
   params,
@@ -17,7 +16,11 @@ export default async function MedicalServices({
   params: Promise<{lang: "fa" | "en"}>;
 }) {
   const {lang} = await params;
-  const {medical_packages_headTitle,our_medical_packages,medical_packages_data} =await getDictionary(lang)
+  const {
+    medical_packages_headTitle,
+    our_medical_packages,
+    medical_packages_data,
+  } = await getDictionary(lang);
 
   return (
     <>
@@ -36,7 +39,10 @@ export default async function MedicalServices({
             </p>
             <br />
             <br /> */}
-            <div className="introduction_description_subText " dangerouslySetInnerHTML={{__html:our_medical_packages}}/>
+            <div
+              className="introduction_description_subText "
+              dangerouslySetInnerHTML={{__html: our_medical_packages}}
+            />
             <div className="w-full mt-20 grid grid-cols-12 gap-6">
               {medical_packages_data.map((item) => {
                 const LazyComponent = lazy(
@@ -45,7 +51,7 @@ export default async function MedicalServices({
                 return (
                   <div className="md:col-span-4 col-span-12" key={item.id}>
                     <Link
-                      href={`/medical-services/${item.slug}`}
+                      href={`/${lang}/medical-services/${item.slug}`}
                       className="flex flex-col items-center justify-center py-10 w-full h-full  rounded-xl border-[1px] border-neutral-200 bg-white  hover:border-secondary"
                     >
                       <span>
