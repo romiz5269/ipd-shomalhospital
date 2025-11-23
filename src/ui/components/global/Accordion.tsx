@@ -10,6 +10,7 @@ interface AccordionProps {
   description: string;
   thumbnail: string;
   services: string;
+  routine: string;
   notes?: string | undefined;
   price: string;
   package_price?: string;
@@ -17,6 +18,7 @@ interface AccordionProps {
   email?: string;
   important_notes?: string;
   whatsapp?: string;
+  routine_title?: string;
   defaultOpen?: number;
   index: number;
 }
@@ -26,6 +28,7 @@ export default function Accordion({
   index,
   description,
   services,
+  routine,
   notes = "",
   thumbnail,
   price,
@@ -34,6 +37,7 @@ export default function Accordion({
   important_notes,
   email,
   whatsapp,
+  routine_title,
   defaultOpen,
 }: AccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(
@@ -81,6 +85,15 @@ export default function Accordion({
                   className="overflow-hidden text-gray-600 mt-2 leading-relaxed md:text-base text-sm"
                   dangerouslySetInnerHTML={{__html: description}}
                 />
+              )}
+              {routine && (
+                <>
+                  <h4 className="font-bold text-lg">{routine_title} :</h4>
+                  <div
+                    className="overflow-hidden text-gray-600  leading-relaxed text-base "
+                    dangerouslySetInnerHTML={{__html: routine}}
+                  />
+                </>
               )}
               {services && (
                 <>

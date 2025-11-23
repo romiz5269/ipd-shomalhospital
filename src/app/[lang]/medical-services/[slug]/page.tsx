@@ -10,7 +10,7 @@ export default async function SingleMedicalService({
   params: Promise<{slug: string; lang: "fa" | "en"}>;
 }) {
   const {slug, lang} = await params;
-  const {medical_packages_data,package_price,served_jobs,email,whatsapp,important_notes} = await getDictionary(lang);
+  const {medical_packages_data,package_price,served_jobs,email,whatsapp,important_notes,routine_title} = await getDictionary(lang);
 
   const data = medical_packages_data.find((p) => p.slug.toString() === slug);
 
@@ -47,6 +47,8 @@ export default async function SingleMedicalService({
                   email={email}
                   whatsapp={whatsapp}
                   important_notes={important_notes}
+                  routine={item?.routine?.toString() ?? ""}
+                  routine_title={routine_title ?? ""}
                 />
               ) : (
                 ""
