@@ -300,7 +300,7 @@
     {
       "id": 6,
       "fullname": "د. أمير جعفر حيدري",
-      "image": "#",
+      "image": "dr-amirjafar-heydari.webp",
       "specialties": [
         {
           "id": 1,
@@ -385,7 +385,7 @@
     {
       "id": 12,
       "fullname": "د. نجمۀ گلين مقدم",
-      "image": "#",
+      "image": "dr-galin.webp",
       "specialties": [
         {
           "id": 1,
@@ -681,7 +681,7 @@
     {
       "id": 30,
       "fullname": "دكتور مائده رحمان زاده",
-      "image": "#",
+      "image": "dr-rahmanzadeh.webp",
       "specialties": [
         {
           "id": 1,
@@ -698,7 +698,7 @@
     {
       "id": 31,
       "fullname": "دكتور منوچهر مجد",
-      "image": "#",
+      "image": "dr-majd.webp",
       "specialties": [
         {
           "id": 1,
@@ -1147,7 +1147,7 @@
     {
       "id": 56,
       "fullname": "دكتور آرش حیدرنژاد",
-      "image": "#",
+      "image": "dr-heydarnejad.webp",
       "specialties": [
         {
           "id": 1,

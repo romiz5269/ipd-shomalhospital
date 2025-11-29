@@ -307,7 +307,7 @@
     {
       "id": 6,
       "fullname": "دکتر امیرجعفر حیدری",
-      "image": "#",
+      "image": "dr-amirjafar-heydari.webp",
       "specialties": [
         {
           "id": 1,
@@ -391,7 +391,7 @@
     {
       "id": 12,
       "fullname": "دکتر نجمه گلین مقدم",
-      "image": "#",
+      "image": "dr-galin.webp",
       "specialties": [
         {
           "id": 1,
@@ -687,7 +687,7 @@
     {
       "id": 30,
       "fullname": "دکتر مائده رحمان زاده",
-      "image": "#",
+      "image": "dr-rahmanzadeh.webp",
       "specialties": [
         {
           "id": 1,
@@ -703,7 +703,7 @@
     {
       "id": 31,
       "fullname": "دکتر منوچهر مجد",
-      "image": "#",
+      "image": "dr-majd.webp",
       "specialties": [
         {
           "id": 1,
@@ -1151,7 +1151,7 @@
     {
       "id": 56,
       "fullname": "دکتر آرش حیدرنژاد",
-      "image": "#",
+      "image": "dr-heydarnejad.webp",
       "specialties": [
         {
           "id": 1,

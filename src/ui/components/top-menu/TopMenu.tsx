@@ -68,7 +68,7 @@ export default function TopMenu({lang}: {lang: languages_types}) {
             >
               <Image
                 loading="lazy"
-                src="/main-logo-blue.png"
+                src={lang==="en" ?"/main-logo-blue-en.webp" :"/main-logo-blue.png"}
                 fill
                 alt="shomal hospital"
                 style={{color: "transparent", fill: "red", objectFit: "fill"}}

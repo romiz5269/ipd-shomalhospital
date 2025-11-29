@@ -44,7 +44,7 @@ export default async function RootLayout({
                 <div className="relative h-[140px] w-[140px]">
                   <Image
                     loading="lazy"
-                    src="/main-logo.png"
+                src={lang==="en" ?"/main-logo-en.webp" :"/main-logo.png"}
                     fill
                     alt="shomal hospital"
                     style={{

@@ -301,7 +301,7 @@
     {
       "id": 6,
       "fullname": "Dr. Amir Jafar Heydari",
-      "image": "#",
+      "image": "dr-amirjafar-heydari.webp",
       "specialties": [
         {
           "id": 1,
@@ -385,8 +385,8 @@
     },
     {
       "id": 12,
-      "fullname": "Dr. Najmeh Golin Moghadam",
-      "image": "#",
+      "fullname": "Dr. Najmeh Galin Moghadam",
+      "image": "dr-galin.webp",
       "specialties": [
         {
           "id": 1,
@@ -682,7 +682,7 @@
     {
       "id": 30,
       "fullname": "Dr. Maedeh Rahmanzadeh",
-      "image": "#",
+      "image": "dr-rahmanzadeh.webp",
       "specialties": [
         {
           "id": 1,
@@ -698,7 +698,7 @@
     {
       "id": 31,
       "fullname": "Dr. Manouchehr Majd",
-      "image": "#",
+      "image": "dr-majd.webp",
       "specialties": [
         {
           "id": 1,
@@ -1146,7 +1146,7 @@
     {
       "id": 56,
       "fullname": "Dr. Arash Heydarnjad",
-      "image": "#",
+      "image": "dr-heydarnejad.webp",
       "specialties": [
         {
           "id": 1,
